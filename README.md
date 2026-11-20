@@ -1,11 +1,11 @@
 # Machine Learning Engineering Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B.svg?style=for-the-badge&logo=streamlit)](https://vamsikrishna-house-price.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B.svg?style=for-the-badge&logo=streamlit)](https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3%2B-orange.svg?logo=scikit-learn)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> 🚀 **Live Interactive App**: Try the project live in your browser: **[https://vamsikrishna-house-price.streamlit.app](https://vamsikrishna-house-price.streamlit.app)**
+> 🚀 **Live Interactive App**: Try the project live in your browser: **[https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app](https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app)**
 
 A curated repository of production-grade Machine Learning projects demonstrating rigorous modeling, leak-free pipelines, cross-validation, metric-driven evaluation, and interactive web deployments.
 
@@ -15,7 +15,7 @@ A curated repository of production-grade Machine Learning projects demonstrating
 
 | Project | Domain & Task | Models / Techniques | Key Metrics | Live Demo |
 | :--- | :--- | :--- | :--- | :---: |
-| [**01. House Price Prediction System**](./01-house-price-prediction/) | Real Estate Valuation (Supervised Regression) | Linear Regression, Decision Tree, Random Forest | $R^2 = 0.796$, $\text{RMSE} = \$36,547$ | [🚀 Launch App](https://vamsikrishna-house-price.streamlit.app) |
+| [**01. House Price Prediction System**](./01-house-price-prediction/) | Real Estate Valuation (Supervised Regression) | Linear Regression, Decision Tree, Random Forest | $R^2 = 0.796$, $\text{RMSE} = \$36,547$ | [🚀 Launch App](https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app) |
 
 ---
 
