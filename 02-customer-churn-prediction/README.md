@@ -2,13 +2,13 @@
 
 **Category 03: Machine Learning | Level: Beginner to Intermediate**
 
-[![Deploy on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=vamsikrishna4244/Machine-Learning&branch=main&mainModule=02-customer-churn-prediction/streamlit_app.py)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B.svg?style=for-the-badge&logo=streamlit)](https://vamsikrishna-customer-churn.streamlit.app)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.4+-orange.svg)](https://scikit-learn.org/)
 [![Pytest Coverage](https://img.shields.io/badge/coverage-96%25-brightgreen.svg)](https://pytest.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> 🚀 **Deploy & Run Live**: Deploy the Churn Prediction App instantly on [Streamlit Cloud](https://share.streamlit.io/deploy?repository=vamsikrishna4244/Machine-Learning&branch=main&mainModule=02-customer-churn-prediction/streamlit_app.py).
+> 🚀 **Live Interactive Demo**: Try the deployed customer churn intelligence app live at **[https://vamsikrishna-customer-churn.streamlit.app](https://vamsikrishna-customer-churn.streamlit.app)**
 
 ---
 

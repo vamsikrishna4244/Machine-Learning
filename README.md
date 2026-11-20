@@ -16,7 +16,7 @@ A curated repository of production-grade Machine Learning projects demonstrating
 | Project | Domain & Task | Models / Techniques | Key Metrics | Live Demo |
 | :--- | :--- | :--- | :--- | :---: |
 | [**01. House Price Prediction System**](./01-house-price-prediction/) | Real Estate Valuation (Supervised Regression) | Linear Regression, Decision Tree, Random Forest | $R^2 = 0.796$, $\text{RMSE} = \$36,547$ | [🚀 Launch App](https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app) |
-| [**02. Customer Churn Prediction System**](./02-customer-churn-prediction/) | Telecom & SaaS Retention (Binary Classification) | Logistic Regression, Decision Tree, Random Forest | $\text{Recall} = 76.0\%$, $\text{ROC-AUC} = 0.835$ | [🚀 Deploy App](https://share.streamlit.io/deploy?repository=vamsikrishna4244/Machine-Learning&branch=main&mainModule=02-customer-churn-prediction/streamlit_app.py) |
+| [**02. Customer Churn Prediction System**](./02-customer-churn-prediction/) | Telecom & SaaS Retention (Binary Classification) | Logistic Regression, Decision Tree, Random Forest | $\text{Recall} = 76.0\%$, $\text{ROC-AUC} = 0.835$ | [🚀 Launch App](https://vamsikrishna-customer-churn.streamlit.app) |
 
 ---
 
