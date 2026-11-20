@@ -1,10 +1,12 @@
 # Project 01: House Price Prediction System
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B.svg?style=for-the-badge&logo=streamlit)](https://vamsikrishna-house-price.streamlit.app)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3%2B-orange.svg?logo=scikit-learn)](https://scikit-learn.org/)
-[![Tested with Pytest](https://img.shields.io/badge/Tested%20with-Pytest-0A9EDC.svg?logo=pytest)](https://pytest.org/)
+[![Tested with Pytest](https://img.shields.io/badge/Tested%20with-Pytest-0A9EDC.svg?logo=pytest)](tests/)
 [![Code Coverage: 95%](https://img.shields.io/badge/Coverage-95%25-brightgreen.svg)](tests/)
-[![Streamlit App](https://img.shields.io/badge/Streamlit-App%20Ready-FF4B4B.svg?logo=streamlit)](streamlit_app.py)
+
+> 🚀 **Live Interactive Demo**: Try the deployed valuation app live at **[https://vamsikrishna-house-price.streamlit.app](https://vamsikrishna-house-price.streamlit.app)**
 
 > An enterprise-grade, end-to-end supervised regression system that predicts continuous residential property valuations using Scikit-learn pipelines, robust outlier handling, and multi-model benchmarking.
 

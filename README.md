@@ -1,10 +1,11 @@
 # Machine Learning Engineering Portfolio
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=vamsikrishna4244/Machine-Learning&branch=main&mainModule=app.py)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B.svg?style=for-the-badge&logo=streamlit)](https://vamsikrishna-house-price.streamlit.app)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3%2B-orange.svg?logo=scikit-learn)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.32+-red.svg?logo=streamlit)](https://streamlit.io/)
+
+> 🚀 **Live Interactive App**: Try the project live in your browser: **[https://vamsikrishna-house-price.streamlit.app](https://vamsikrishna-house-price.streamlit.app)**
 
 A curated repository of production-grade Machine Learning projects demonstrating rigorous modeling, leak-free pipelines, cross-validation, metric-driven evaluation, and interactive web deployments.
 
@@ -12,9 +13,9 @@ A curated repository of production-grade Machine Learning projects demonstrating
 
 ## Repository Projects
 
-| Project | Domain & Task | Models / Techniques | Key Metrics | Status |
+| Project | Domain & Task | Models / Techniques | Key Metrics | Live Demo |
 | :--- | :--- | :--- | :--- | :---: |
-| [**01. House Price Prediction System**](./01-house-price-prediction/) | Real Estate Valuation (Supervised Regression) | Linear Regression, Decision Tree, Random Forest | $R^2 = 0.796$, $\text{RMSE} = \$36,547$, $\text{MAE} = \$27,330$ | Complete |
+| [**01. House Price Prediction System**](./01-house-price-prediction/) | Real Estate Valuation (Supervised Regression) | Linear Regression, Decision Tree, Random Forest | $R^2 = 0.796$, $\text{RMSE} = \$36,547$ | [🚀 Launch App](https://vamsikrishna-house-price.streamlit.app) |
 
 ---
 
