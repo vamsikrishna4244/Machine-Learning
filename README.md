@@ -17,6 +17,7 @@ A curated repository of production-grade Machine Learning projects demonstrating
 | :--- | :--- | :--- | :--- | :---: |
 | [**01. House Price Prediction System**](./01-house-price-prediction/) | Real Estate Valuation (Supervised Regression) | Linear Regression, Decision Tree, Random Forest | $R^2 = 0.796$, $\text{RMSE} = \$36,547$ | [🚀 Launch App](https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app) |
 | [**02. Customer Churn Prediction System**](./02-customer-churn-prediction/) | Telecom & SaaS Retention (Binary Classification) | Logistic Regression, Decision Tree, Random Forest | $\text{Recall} = 76.0\%$, $\text{ROC-AUC} = 0.835$ | [🚀 Launch App](https://vamsikrishna-customer-churn.streamlit.app) |
+| [**03. Email Spam Classification System**](./03-email-spam-classification/) | Cybersecurity & Text Filtering (NLP Classification) | TF-IDF vs. BoW, Naive Bayes, Logistic Regression, Linear SVM | $\text{Accuracy} = 98.6\%$, $\text{F1-Score} = 0.957$ | [🚀 Launch App](https://vamsikrishna-email-spam.streamlit.app) |
 
 ---
 
@@ -37,6 +38,14 @@ The **Customer Churn Prediction System** is an enterprise binary classification 
 - **Metric-Driven Evaluation**: Evaluated via PR-AUC (0.654), ROC-AUC (0.835), F1-Score, and false positive/negative cost trade-offs.
 - **Interactive Dashboard**: Streamlit app with subscriber risk simulator, probability threshold sliders, and confusion matrix diagnostics.
 - **Robust Quality**: 24/24 unit tests passing with 96% code coverage.
+
+### Project 03: Email Spam Classification System
+The **Email Spam Classification System** is an end-to-end natural language processing (NLP) and machine learning application that detects spam and phishing emails with high precision and recall.
+- **Vectorization Benchmarking**: Systematic comparison of Bag-of-Words (BoW) and Term Frequency-Inverse Document Frequency (TF-IDF) feature extractors across unigram and bigram vocabularies.
+- **Multi-Model Evaluation**: Benchmarks Multinomial Naive Bayes, Logistic Regression, and Linear SVM models.
+- **Threat Intelligence & Keyword Attribution**: Real-time inspection of high-risk spam indicators and token attribution.
+- **Interactive Web App**: A production-ready Streamlit dashboard featuring live raw email scoring, threshold customization, keyword highlighting, and model comparison matrices.
+- **Robust Quality**: 27/27 unit tests passing with 95% code coverage.
 
 ---
 
@@ -71,6 +80,51 @@ pytest --cov=src --cov-report=term-missing
 # Launch interactive Streamlit application
 streamlit run streamlit_app.py
 ```
+
+### 4. Run Customer Churn Prediction Project
+```bash
+cd ../02-customer-churn-prediction
+pip install -r requirements.txt
+
+# Train models and generate performance visual diagnostics
+python train.py
+
+# Run unit tests with code coverage
+pytest --cov=src --cov-report=term-missing
+
+# Launch interactive Streamlit application
+streamlit run streamlit_app.py
+```
+
+### 5. Run Email Spam Classification Project
+```bash
+cd ../03-email-spam-classification
+pip install -r requirements.txt
+
+# Train models and generate performance visual diagnostics
+python train.py
+
+# Run unit tests with code coverage
+pytest --cov=src --cov-report=term-missing
+
+# Launch interactive Streamlit application
+streamlit run streamlit_app.py
+```
+
+---
+
+## Deploying on Streamlit Community Cloud
+
+Each project in this repository can be deployed as a standalone application on [Streamlit Community Cloud](https://share.streamlit.io):
+
+1. Sign in to **Streamlit Community Cloud** with GitHub.
+2. Click **"New app"**.
+3. Configure repository settings:
+   - **Repository:** `vamsikrishna4244/Machine-Learning`
+   - **Branch:** `main`
+   - **Main file path:** `03-email-spam-classification/streamlit_app.py`
+   - **App URL (optional):** `vamsikrishna-email-spam`
+4. Click **Deploy!**
 
 ---
 
