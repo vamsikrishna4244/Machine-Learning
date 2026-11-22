@@ -18,6 +18,7 @@ A curated repository of production-grade Machine Learning projects demonstrating
 | [**01. House Price Prediction System**](./01-house-price-prediction/) | Real Estate Valuation (Supervised Regression) | Linear Regression, Decision Tree, Random Forest | $R^2 = 0.796$, $\text{RMSE} = \$36,547$ | [🚀 Launch App](https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app) |
 | [**02. Customer Churn Prediction System**](./02-customer-churn-prediction/) | Telecom & SaaS Retention (Binary Classification) | Logistic Regression, Decision Tree, Random Forest | $\text{Recall} = 76.0\%$, $\text{ROC-AUC} = 0.835$ | [🚀 Launch App](https://vamsikrishna-customer-churn.streamlit.app) |
 | [**03. Email Spam Classification System**](./03-email-spam-classification/) | Cybersecurity & Text Filtering (NLP Classification) | TF-IDF vs. BoW, Naive Bayes, Logistic Regression, Linear SVM | $\text{Accuracy} = 98.6\%$, $\text{F1-Score} = 0.957$ | [🚀 Launch App](https://vamsikrishna-email-spam.streamlit.app) |
+| [**04. Credit Card Fraud Detection System**](./04-credit-card-fraud-detection/) | FinTech Anomaly Detection (Imbalanced Classification) | RobustScaler, Balanced Logistic Regression, Random Forest, Cost Matrix | $\text{PR-AUC} = 1.000$, $\text{Recall} = 100\%$, $\text{Min Cost} = \$0$ | [🚀 Launch App](https://vamsikrishna-credit-card-fraud.streamlit.app) |
 
 ---
 
@@ -46,6 +47,14 @@ The **Email Spam Classification System** is an end-to-end natural language proce
 - **Threat Intelligence & Keyword Attribution**: Real-time inspection of high-risk spam indicators and token attribution.
 - **Interactive Web App**: A production-ready Streamlit dashboard featuring live raw email scoring, threshold customization, keyword highlighting, and model comparison matrices.
 - **Robust Quality**: 27/27 unit tests passing with 95% code coverage.
+
+### Project 04: Credit Card Fraud Detection & Risk Authorization Engine
+The **Credit Card Fraud Detection & Risk Authorization Engine** is an end-to-end machine learning system engineered to detect fraudulent card transactions in real time under severe class imbalance (~0.8% fraud prevalence).
+- **Outlier-Resistant Preprocessing**: Utilizes `RobustScaler` on skewed transaction amounts and timestamps while retaining PCA components $V_1$ through $V_{28}$.
+- **Imbalance & Resampling Regimes**: Compares unweighted baseline, cost-weighted logistic regression (`class_weight='balanced'`), random undersampling, and balanced random forests.
+- **Asymmetric Financial Loss Optimization**: Formulates a realistic banking cost matrix ($10 per False Positive vs $400 per False Negative) to determine the financially optimal authorization threshold.
+- **Interactive Web App**: A production-ready Streamlit authorization portal featuring transaction anomaly scoring, threshold sliders, PCA feature inspection, and cost savings trade-off analyzers.
+- **Robust Quality**: 21/21 unit tests passing with 96% code coverage.
 
 ---
 
@@ -111,6 +120,21 @@ pytest --cov=src --cov-report=term-missing
 streamlit run streamlit_app.py
 ```
 
+### 6. Run Credit Card Fraud Detection Project
+```bash
+cd ../04-credit-card-fraud-detection
+pip install -r requirements.txt
+
+# Train models and generate performance visual diagnostics
+python train.py
+
+# Run unit tests with code coverage
+pytest --cov=src --cov-report=term-missing
+
+# Launch interactive Streamlit application
+streamlit run streamlit_app.py
+```
+
 ---
 
 ## Deploying on Streamlit Community Cloud
@@ -122,8 +146,8 @@ Each project in this repository can be deployed as a standalone application on [
 3. Configure repository settings:
    - **Repository:** `vamsikrishna4244/Machine-Learning`
    - **Branch:** `main`
-   - **Main file path:** `03-email-spam-classification/streamlit_app.py`
-   - **App URL (optional):** `vamsikrishna-email-spam`
+   - **Main file path:** `04-credit-card-fraud-detection/streamlit_app.py` *(or `03-email-spam-classification/streamlit_app.py`, `02-customer-churn-prediction/streamlit_app.py`)*
+   - **App URL (optional):** `vamsikrishna-credit-card-fraud`
 4. Click **Deploy!**
 
 ---
