@@ -19,6 +19,7 @@ A curated repository of production-grade Machine Learning projects demonstrating
 | [**02. Customer Churn Prediction System**](./02-customer-churn-prediction/) | Telecom & SaaS Retention (Binary Classification) | Logistic Regression, Decision Tree, Random Forest | $\text{Recall} = 76.0\%$, $\text{ROC-AUC} = 0.835$ | [🚀 Launch App](https://vamsikrishna-customer-churn.streamlit.app) |
 | [**03. Email Spam Classification System**](./03-email-spam-classification/) | Cybersecurity & Text Filtering (NLP Classification) | TF-IDF vs. BoW, Naive Bayes, Logistic Regression, Linear SVM | $\text{Accuracy} = 98.6\%$, $\text{F1-Score} = 0.957$ | [🚀 Launch App](https://vamsikrishna-email-spam.streamlit.app) |
 | [**04. Credit Card Fraud Detection System**](./04-credit-card-fraud-detection/) | FinTech Anomaly Detection (Imbalanced Classification) | RobustScaler, Balanced Logistic Regression, Random Forest, Cost Matrix | $\text{PR-AUC} = 1.000$, $\text{Recall} = 100\%$, $\text{Min Cost} = \$0$ | [🚀 Launch App](https://vamsikrishna-credit-card-fraud.streamlit.app) |
+| [**05. Customer Segmentation System**](./05-customer-segmentation/) | Retail Behavioral Clustering (Unsupervised Learning) | K-Means ($k=5$), Hierarchical (Ward), DBSCAN, 2D PCA | $\text{Silhouette} = 0.491$, $\text{CH} = 2,253.8$ | [🚀 Launch App](https://vamsikrishna-customer-segmentation.streamlit.app) |
 
 ---
 
@@ -55,6 +56,15 @@ The **Credit Card Fraud Detection & Risk Authorization Engine** is an end-to-end
 - **Asymmetric Financial Loss Optimization**: Formulates a realistic banking cost matrix ($10 per False Positive vs $400 per False Negative) to determine the financially optimal authorization threshold.
 - **Interactive Web App**: A production-ready Streamlit authorization portal featuring transaction anomaly scoring, threshold sliders, PCA feature inspection, and cost savings trade-off analyzers.
 - **Robust Quality**: 21/21 unit tests passing with 96% code coverage.
+
+### Project 05: Customer Segmentation & Behavioral Archetyping System
+The **Customer Segmentation Using Unsupervised Clustering** project is an end-to-end machine learning system that groups retail and e-commerce shoppers into distinct behavioral archetypes.
+- **Feature Normalization & Distance Preservation**: Applies `StandardScaler` across monetary, frequency, and basket size features to ensure distortion-free Euclidean distance spaces.
+- **Rigorous Cluster Optimization**: Empirically benchmarks $k \in [2, 10]$ using the Elbow Method (Inertia), Silhouette Analysis, Davies-Bouldin index, and Calinski-Harabasz score.
+- **Multi-Algorithm Comparison**: Contrasts K-Means++ centroid partitioning against Agglomerative Hierarchical clustering and DBSCAN density filtering.
+- **2D PCA & Strategic Personas**: Projects high-dimensional feature spaces onto 2D Principal Components and maps cluster centroids into 5 actionable retail personas (VIP Champions, Trendsetters, Savers, Budget Planners, Mainstream).
+- **Interactive Web App**: A production-ready Streamlit clustering console featuring dynamic customer profile simulations, radar charts, 2D/3D PCA scatter plots, and promotional playbooks.
+- **Robust Quality**: 21/21 unit tests passing with 97% code coverage.
 
 ---
 
@@ -135,6 +145,21 @@ pytest --cov=src --cov-report=term-missing
 streamlit run streamlit_app.py
 ```
 
+### 7. Run Customer Segmentation Project
+```bash
+cd ../05-customer-segmentation
+pip install -r requirements.txt
+
+# Train models and generate performance visual diagnostics
+python train.py
+
+# Run unit tests with code coverage
+pytest --cov=src --cov-report=term-missing
+
+# Launch interactive Streamlit application
+streamlit run streamlit_app.py
+```
+
 ---
 
 ## Deploying on Streamlit Community Cloud
@@ -146,8 +171,8 @@ Each project in this repository can be deployed as a standalone application on [
 3. Configure repository settings:
    - **Repository:** `vamsikrishna4244/Machine-Learning`
    - **Branch:** `main`
-   - **Main file path:** `04-credit-card-fraud-detection/streamlit_app.py` *(or `03-email-spam-classification/streamlit_app.py`, `02-customer-churn-prediction/streamlit_app.py`)*
-   - **App URL (optional):** `vamsikrishna-credit-card-fraud`
+   - **Main file path:** `05-customer-segmentation/streamlit_app.py` *(or `04-credit-card-fraud-detection/streamlit_app.py`, `03-email-spam-classification/streamlit_app.py`, `02-customer-churn-prediction/streamlit_app.py`)*
+   - **App URL (optional):** `vamsikrishna-customer-segmentation`
 4. Click **Deploy!**
 
 ---
