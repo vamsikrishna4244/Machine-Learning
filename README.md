@@ -7,7 +7,7 @@
 
 > 🚀 **Live Interactive App**: Try the project live in your browser: **[https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app](https://vamsikrishna4244-machine-learning-app-ncsihn.streamlit.app)**
 
-A curated repository of production-grade Machine Learning projects demonstrating rigorous modeling, leak-free pipelines, cross-validation, metric-driven evaluation, and interactive web deployments.
+A curated, production-grade portfolio of six Machine Learning projects demonstrating leak-free pipelines, cross-validation, metric-driven evaluation, ethical AI audits, and interactive web deployments.
 
 ---
 
@@ -20,6 +20,7 @@ A curated repository of production-grade Machine Learning projects demonstrating
 | [**03. Email Spam Classification System**](./03-email-spam-classification/) | Cybersecurity & Text Filtering (NLP Classification) | TF-IDF vs. BoW, Naive Bayes, Logistic Regression, Linear SVM | $\text{Accuracy} = 98.6\%$, $\text{F1-Score} = 0.957$ | [🚀 Launch App](https://vamsikrishna-email-spam.streamlit.app) |
 | [**04. Credit Card Fraud Detection System**](./04-credit-card-fraud-detection/) | FinTech Anomaly Detection (Imbalanced Classification) | RobustScaler, Balanced Logistic Regression, Random Forest, Cost Matrix | $\text{PR-AUC} = 1.000$, $\text{Recall} = 100\%$, $\text{Min Cost} = \$0$ | [🚀 Launch App](https://vamsikrishna-credit-card-fraud.streamlit.app) |
 | [**05. Customer Segmentation System**](./05-customer-segmentation/) | Retail Behavioral Clustering (Unsupervised Learning) | K-Means ($k=5$), Hierarchical (Ward), DBSCAN, 2D PCA | $\text{Silhouette} = 0.491$, $\text{CH} = 2,253.8$ | [🚀 Launch App](https://vamsikrishna-customer-segmentation.streamlit.app) |
+| [**06. Employee Attrition Prediction System**](./06-employee-attrition-prediction/) | People Analytics & Ethical AI (Binary Classification) | Tuned Random Forest, Logistic Regression, EEOC 4/5ths Audit | $\text{ROC-AUC} = 0.858$, $\text{PR-AUC} = 0.663$ | [🚀 Launch App](https://vamsikrishna-employee-attrition.streamlit.app) |
 
 ---
 
@@ -65,6 +66,14 @@ The **Customer Segmentation Using Unsupervised Clustering** project is an end-to
 - **2D PCA & Strategic Personas**: Projects high-dimensional feature spaces onto 2D Principal Components and maps cluster centroids into 5 actionable retail personas (VIP Champions, Trendsetters, Savers, Budget Planners, Mainstream).
 - **Interactive Web App**: A production-ready Streamlit clustering console featuring dynamic customer profile simulations, radar charts, 2D/3D PCA scatter plots, and promotional playbooks.
 - **Robust Quality**: 21/21 unit tests passing with 97% code coverage.
+
+### Project 06: Enterprise Employee Attrition Prediction & Retention System
+The **Enterprise Employee Attrition Prediction System** is a supervised machine learning application that identifies high-flight-risk talent, isolates organizational turnover drivers, and evaluates algorithmic demographic parity.
+- **Leak-Free ColumnTransformer**: Processes numerical features (monthly income, tenure, distance from home) alongside one-hot encoded categorical factors with zero data leakage.
+- **Hyperparameter Optimization**: Employs 5-fold cross-validation and `GridSearchCV` on Random Forests, contrasting against Logistic Regression and Decision Trees.
+- **Ethical AI & EEOC Audit**: Implements an automated demographic parity check enforcing the EEOC 80% (Four-Fifths) Disparate Impact rule across gender and age cohorts.
+- **Interactive Web App**: A production-ready Streamlit decision portal featuring an individual employee attrition simulator, retention intervention playbooks, demographic parity audit tabs, and ROC/PR curve diagnostics.
+- **Robust Quality**: 27/27 unit tests passing with 97% code coverage.
 
 ---
 
@@ -160,6 +169,21 @@ pytest --cov=src --cov-report=term-missing
 streamlit run streamlit_app.py
 ```
 
+### 8. Run Employee Attrition Prediction Project
+```bash
+cd ../06-employee-attrition-prediction
+pip install -r requirements.txt
+
+# Train models and generate performance visual diagnostics
+python train.py
+
+# Run unit tests with code coverage
+pytest --cov=src --cov-report=term-missing
+
+# Launch interactive Streamlit application
+streamlit run streamlit_app.py
+```
+
 ---
 
 ## Deploying on Streamlit Community Cloud
@@ -171,8 +195,8 @@ Each project in this repository can be deployed as a standalone application on [
 3. Configure repository settings:
    - **Repository:** `vamsikrishna4244/Machine-Learning`
    - **Branch:** `main`
-   - **Main file path:** `05-customer-segmentation/streamlit_app.py` *(or `04-credit-card-fraud-detection/streamlit_app.py`, `03-email-spam-classification/streamlit_app.py`, `02-customer-churn-prediction/streamlit_app.py`)*
-   - **App URL (optional):** `vamsikrishna-customer-segmentation`
+   - **Main file path:** `06-employee-attrition-prediction/streamlit_app.py` *(or any project `01`–`05`)*
+   - **App URL (optional):** `vamsikrishna-employee-attrition`
 4. Click **Deploy!**
 
 ---
